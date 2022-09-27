@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Home  from './pages/Home';
 
-function App() {
+const App = () => {
+    return(
     <>
-        <Artist />
-        <Artist />
-        <Artist />
+        <Home />
     </>
+    )
 }
+
+export default App;

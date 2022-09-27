@@ -1,27 +1,36 @@
 import React, { useState } from 'react';
 
-const Artist = () => {
-    const [Artist, setArtist] = useState("")
+const Artist = (props) => {
+    const [selectedArtist, setSelectedArtist] = useState()
 
     const handleArtist = (e) => {
-        setArtist(e)
+        e.preventDefault()
+        setSelectedArtist(e.target.textContent)
+        console.log( {selectedArtist}.selectedArtist )
+        return(
+            <>
+              
+            </>
+        )
     }
+
+
 
     return (
         <> 
            <p>Click the artist you'd like to explore</p>
            <div>
-                <div>
+                <div onClick={handleArtist}>
                     Joey BAD4$$
                 </div>
-                <div>
+                <div onClick={handleArtist}>
                     Nas
                 </div>
-                <div>
+                <div onClick={handleArtist}>
                     Kanye
                 </div>
            </div>
-           
+           <h1>{selectedArtist}</h1>
            
         </>
 
@@ -29,3 +38,5 @@ const Artist = () => {
  }
 
  export default Artist;
+
+
