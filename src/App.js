@@ -1,10 +1,19 @@
 import React from 'react';
-import Home  from './pages/Home';
+import { Routes, Route } from 'react-router-dom';
+import { Header } from './layout'
+import { Home, Joey, Kanye, Nas } from './pages'
 
-const App = () => {
+function App()  {
     return(
     <>
-        <Home />
+        <Header />
+        <Routes>
+            <Route path="/" element = {<Home />}></Route>
+            <Route path="Joey" element = {<Joey />} ></Route>
+            <Route path="Kanye" element = {<Kanye />}> </Route>
+            <Route path="Nas" element = {<Nas />}> </Route>
+
+        </Routes>
     </>
     )
 }
