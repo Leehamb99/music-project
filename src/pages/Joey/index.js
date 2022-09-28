@@ -1,7 +1,12 @@
 import React from 'react';
-import { Header } from '../../layout';
+import styled from 'styled-components'
+
 import { SongList } from '../../components';
-import { SongCard } from '../../components'
+import { SongCard } from '../../components';
+
+const Wrapper = styled.div`
+    background: papayawhip;
+`;
 
 
 const Joey = () => {
@@ -19,11 +24,14 @@ const Joey = () => {
         })
         return(
             <>
-           <div>
-                <Header />
-           </div>
+
                 <SongCard  name={Artist.name} description={Artist.description}/>
+                <Wrapper>
+
                 {renderSongs}
+
+                </Wrapper>
+                
                 
             </>
         )

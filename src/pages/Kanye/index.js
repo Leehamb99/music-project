@@ -1,5 +1,8 @@
 import React from 'react';
-import { Header } from '../../layout/';
+import { SongList } from '../../components';
+import { SongCard } from '../../components';
+
+
 
 const Kanye = () => {
     const Artist = {
@@ -8,11 +11,18 @@ const Kanye = () => {
         description: "Ye, commonly known as Kanye West, is an American rapper, record producer, and fashion designer. He is widely regarded as one of the greatest and most influential hip hop musicians of all time, as well as one of the greatest musicians of his generation."
     }
 
-  return (
-    <>
-    <Header />
-    <div>Kanye</div>
-    </>
+    const renderSongs = (Artist.songs).map((song, idx) => {
+      return(
+          <SongList key = {idx} song= {song} />
+      )
+  })
+  return(
+      <>
+
+          <SongCard  name={Artist.name} description={Artist.description}/>
+          {renderSongs}
+          
+      </>
   )
 }
 

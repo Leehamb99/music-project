@@ -1,7 +1,8 @@
 import React from 'react'
+import { Header }  from '../../layout'
 
 
-const  Home = () =>  {
+const Home = () =>  {
     return(
     <>
         <Header />
