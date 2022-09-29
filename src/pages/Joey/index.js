@@ -5,7 +5,8 @@ import { SongList } from '../../components';
 import { SongCard } from '../../components';
 
 const Wrapper = styled.div`
-    background: papayawhip;
+    background: darkgrey;
+    text-align: center;
 `;
 
 

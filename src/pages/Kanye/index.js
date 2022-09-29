@@ -1,7 +1,16 @@
 import React from 'react';
+import styled from 'styled-components'
+
 import { SongList } from '../../components';
 import { SongCard } from '../../components';
 
+const Wrapper = styled.div`
+    background: darkgrey;
+    text-align: center;
+    width: 40%;
+    margin: 2.5%;
+    color: #f48c15;
+`;
 
 
 const Kanye = () => {
@@ -20,7 +29,10 @@ const Kanye = () => {
       <>
 
           <SongCard  name={Artist.name} description={Artist.description}/>
+          <Wrapper>
           {renderSongs}
+
+          </Wrapper>
           
       </>
   )

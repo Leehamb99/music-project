@@ -1,8 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
+
 import { SongList } from '../../components';
 import { SongCard } from '../../components';
 
-
+const Wrapper = styled.div`
+    background: darkgrey;
+    text-align: center;
+`;
 
 const Nas = () => {
     const Artist = {
@@ -19,7 +24,10 @@ const Nas = () => {
       <>
 
           <SongCard  name={Artist.name} description={Artist.description}/>
+          <Wrapper>
+
           {renderSongs}
+          </Wrapper>
           
       </>
   )
