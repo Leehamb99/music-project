@@ -10,9 +10,6 @@ const Song = styled.div`
 
 `
 
-const Button = styled.div`
-    color: black;
-`
 
 
 

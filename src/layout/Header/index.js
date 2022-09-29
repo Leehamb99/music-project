@@ -27,7 +27,6 @@ const NavbarItem = styled.div`
 
 const Header = () => {
 
-    const activeClass = (({isActive}) => isActive ? 'current' : undefined)
 
 
     
