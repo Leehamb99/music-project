@@ -9,7 +9,6 @@ function App()  {
     <>
         <Header />
         <Routes>
-            {/* <Route path="/" element= {<Home />}> </Route> */}
             <Route path="Joey" element= {<Joey />}> </Route>
             <Route path="Kanye" element= {<Kanye />}> </Route>
             <Route path="Nas" element= {<Nas />}> </Route>

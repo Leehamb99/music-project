@@ -4,12 +4,12 @@ import styled from 'styled-components';
 
 const Navbar = styled.nav`
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
     font-size: 1.5rem;
     background-color: #404040;
-    padding: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 2.5vw;
+
 `;
 
 const NavbarItem = styled.div`
