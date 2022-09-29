@@ -10,7 +10,7 @@ const LikeButton = () => {
     }
 
     return (
-        <span role="switch" onClick={handleFave} style={{ color: liked ? 'gold' : 'black' }}>★</span>
+        <span onClick={handleFave} style={{ color: liked ? 'gold' : 'black' }}>★</span>
     );
 }
 
